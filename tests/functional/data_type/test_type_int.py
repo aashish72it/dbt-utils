@@ -16,6 +16,10 @@ macros__legacy_sql = """
 {% macro bigquery__type_int() %}
     int64
 {% endmacro %}
+
+{% macro synapse__type_int() %}
+    int
+{% endmacro %}
 """
 
 
