@@ -19,8 +19,13 @@ macros__legacy_sql = """
 {% macro default__type_numeric() %}
     numeric(28, 6)
 {% endmacro %}
+
 {% macro bigquery__type_numeric() %}
     numeric
+{% endmacro %}
+
+{% macro synapse__type_numeric() %}
+    decimal(28,6)
 {% endmacro %}
 """
 
