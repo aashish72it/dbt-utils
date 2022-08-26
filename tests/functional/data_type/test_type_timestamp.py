@@ -20,6 +20,10 @@ macros__legacy_sql = """
 {% macro snowflake__type_timestamp() %}
     timestamp_ntz
 {% endmacro %}
+
+{% macro synapse__type_timestamp() %}
+    datetime2
+{% endmacro %}
 """
 
 
