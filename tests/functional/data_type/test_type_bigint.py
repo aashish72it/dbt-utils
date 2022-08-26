@@ -16,6 +16,10 @@ macros__legacy_sql = """
 {% macro bigquery__type_bigint() %}
     int64
 {% endmacro %}
+
+{% macro synapse__type_bigint() %}
+    bigint
+{% endmacro %}
 """
 
 class TestTypeBigIntLegacy(BaseLegacyDataTypeMacro, BaseTypeBigInt):
